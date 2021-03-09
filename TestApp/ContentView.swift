@@ -11,21 +11,24 @@ struct ContentView: View {
     @State var alertIsVisible: Bool = false
     var body: some View {
         VStack {
-            Text("2021年加油1")
-                .fontWeight(.semibold)
-                .foregroundColor(Color.green)
-            Button(action: {
-                print("这辈子都没见过这样的要求")
-                self.alertIsVisible = true //更改状态
-            }) {
-                Text("过来点我呀")
+            MapView().edgesIgnoringSafeArea(.top).frame(height: 300)
+            CircleImage().offset(y: -130)
+                .padding(.bottom, -130)
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+                HStack {
+                    Text("Joshua Tree National Park")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("California")
+                        .font(.subheadline)
+                }
             }
-            .alert(isPresented: self.$alertIsVisible){
-                                Alert(title: Text("你好"),
-                                      message: Text("这样的要求不算奇怪"),
-                                      dismissButton: .default(Text("太好了！")))
-                            }
+            .padding()
+            Spacer()
         }
+            
     }
 }
 

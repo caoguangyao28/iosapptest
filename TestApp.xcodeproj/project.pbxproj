@@ -13,6 +13,9 @@
 		2B77D3A525E3EFC500376E38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B77D3A425E3EFC500376E38 /* Preview Assets.xcassets */; };
 		2B77D3B025E3EFC600376E38 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77D3AF25E3EFC600376E38 /* TestAppTests.swift */; };
 		2B77D3BB25E3EFC600376E38 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B77D3BA25E3EFC600376E38 /* TestAppUITests.swift */; };
+		2BF143F625F74561002B07D2 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF143F525F74561002B07D2 /* Resources.xcassets */; };
+		2BF1440325F7470A002B07D2 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1440225F7470A002B07D2 /* CircleImage.swift */; };
+		2BF1440825F7490D002B07D2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1440725F7490D002B07D2 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		2B77D3B625E3EFC600376E38 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B77D3BA25E3EFC600376E38 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		2B77D3BC25E3EFC600376E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF143F525F74561002B07D2 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		2BF1440225F7470A002B07D2 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		2BF1440725F7490D002B07D2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				2B77D3A125E3EFC500376E38 /* Assets.xcassets */,
 				2B77D3A625E3EFC500376E38 /* Info.plist */,
 				2B77D3A325E3EFC500376E38 /* Preview Content */,
+				2BF143F525F74561002B07D2 /* Resources.xcassets */,
+				2BF1440225F7470A002B07D2 /* CircleImage.swift */,
+				2BF1440725F7490D002B07D2 /* MapView.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF143F625F74561002B07D2 /* Resources.xcassets in Resources */,
 				2B77D3A525E3EFC500376E38 /* Preview Assets.xcassets in Resources */,
 				2B77D3A225E3EFC500376E38 /* Assets.xcassets in Resources */,
 			);
@@ -260,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B77D3A025E3EFC400376E38 /* ContentView.swift in Sources */,
+				2BF1440825F7490D002B07D2 /* MapView.swift in Sources */,
 				2B77D39E25E3EFC400376E38 /* TestAppApp.swift in Sources */,
+				2BF1440325F7470A002B07D2 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
