@@ -16,6 +16,8 @@ struct MapView: UIViewRepresentable {
 //    var body: some View {
 //        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
 //    }
+    //
+    var coordinate: CLLocationCoordinate2D
 //    该方法创建并返回一个空的 MKMapView
     func makeUIView(context: Context) -> MKMapView {
         MKMapView(frame: .zero)
@@ -33,6 +35,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(coordinate: landmarkData[0].locationCoordinate)
     }
 }
