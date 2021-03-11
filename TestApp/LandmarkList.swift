@@ -8,12 +8,27 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    // 状态属性
+//    @State var showFavoritesOnly = false
+    //
+    @EnvironmentObject var userData: UserData
+    //
+    
     var body: some View {
         NavigationView {
-            List(landmarkData) { landmark in
+            List {
                 //
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow(landmark: landmark)
+                Toggle(isOn: $userData.showFavoritesOnly) {
+                    Text("Favorites only")
+                }
+                //
+                ForEach(userData.landmarks) { landmark in
+                    //
+                    if !userData.showFavoritesOnly || landmark.isFavorite {
+                        NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                            LandmarkRow(landmark: landmark)
+                        }
+                    }
                 }
             }
             //
@@ -33,6 +48,6 @@ struct LandmarkList_Previews: PreviewProvider {
 //                .previewDisplayName(deviceName)
 //                //
 //        }
-        LandmarkList()
+        LandmarkList().environmentObject(UserData())
     }
 }

@@ -33,6 +33,7 @@
 		2BF1444225F75F34002B07D2 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1444125F75F34002B07D2 /* LandmarkRow.swift */; };
 		2BF1444925F7642B002B07D2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1441725F75561002B07D2 /* Data.swift */; };
 		2BF1444E25F7669E002B07D2 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1444D25F7669E002B07D2 /* LandmarkList.swift */; };
+		2BF1445325F9F052002B07D2 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF1445225F9F052002B07D2 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		2BF1442C25F756A8002B07D2 /* lakemcdonald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lakemcdonald.jpg; sourceTree = "<group>"; };
 		2BF1444125F75F34002B07D2 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		2BF1444D25F7669E002B07D2 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		2BF1445225F9F052002B07D2 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			children = (
 				2BF1441725F75561002B07D2 /* Data.swift */,
 				2BF1441625F75561002B07D2 /* Landmark.swift */,
+				2BF1445225F9F052002B07D2 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				2BF1444925F7642B002B07D2 /* Data.swift in Sources */,
 				2B77D3A025E3EFC400376E38 /* LandmarkDetail.swift in Sources */,
 				2BF1440825F7490D002B07D2 /* MapView.swift in Sources */,
+				2BF1445325F9F052002B07D2 /* UserData.swift in Sources */,
 				2BF1444E25F7669E002B07D2 /* LandmarkList.swift in Sources */,
 				2B77D39E25E3EFC400376E38 /* TestAppApp.swift in Sources */,
 				2BF1440325F7470A002B07D2 /* CircleImage.swift in Sources */,
