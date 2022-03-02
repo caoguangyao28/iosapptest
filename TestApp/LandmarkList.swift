@@ -19,7 +19,8 @@ struct LandmarkList: View {
             List {
                 //
                 Toggle(isOn: $userData.showFavoritesOnly) {
-                    Text("Favorites only")
+                  Text("Favorites only")
+                    .foregroundColor(Color.pink).font(.title3)
                 }
                 //
                 ForEach(userData.landmarks) { landmark in
